@@ -1,0 +1,18 @@
+apply plugin: 'war'
+apply plugin: 'eclipse'
+
+sourceCompatibility= 1.8
+
+repositories{
+	mavenCentral()
+}
+
+dependencies{
+
+	//Jersey
+	compile 'com.sun.jersey:jersey-core:1.19.4'
+	compile 'com.sun.jersey:jersey-servlet:1.19.4'
+	
+	//JUnit
+	testImplementation 'junit:junit:4.12'
+}
